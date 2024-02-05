@@ -14,16 +14,4 @@
 #   limitations under the License.                                              #
 #################################################################################
 
-from launch import LaunchDescription
-from launch_ros.actions import Node
 
-
-def generate_launch_description():
-    return LaunchDescription([
-        Node(
-            package='ctrl_pkg',
-            namespace='ctrl_pkg',
-            executable='ctrl_node',
-            name='ctrl_node'
-        )
-    ])
